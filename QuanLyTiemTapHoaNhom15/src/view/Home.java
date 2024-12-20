@@ -43,31 +43,20 @@ public class Home extends JFrame {
 	private JPanel mainPanel;
 
 	public Home(User user) {
-		
+
 		setResizable(false);
 		setTitle("Quản lý tiệm tạp hoá Xanh");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1280, 720);
+		setBounds(100, 100, 1000, 660);
 		
-		mainPanel = new JPanel() {
-			 @Override
-	            protected void paintComponent(Graphics g) {
-	                super.paintComponent(g);
-	                try {
-	                    Image img = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/resources/supermarket-4052658_1280.jpg"));
-	                    g.drawImage(img, 0, 0, getWidth(), getHeight(), this);
-	                } catch (Exception e) {
-	                    e.printStackTrace();
-	                }
-	            }
-		};
+		mainPanel = new JPanel();
 		
 		mainPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(mainPanel);
 		mainPanel.setLayout(null);
 
 		JPanel panel = new JPanel();
-		panel.setBounds(10, 11, 201, 50);
+		panel.setBounds(107, 10, 201, 50);
 		mainPanel.add(panel);
 		panel.setLayout(null);
 		
@@ -88,7 +77,7 @@ public class Home extends JFrame {
 			}
 		});
 		logoutBtn.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		logoutBtn.setBounds(422, 382, 292, 56);
+		logoutBtn.setBounds(107, 537, 292, 56);
 		mainPanel.add(logoutBtn);
 
 		JButton categoryBtn = new JButton("Quản lý loại sản phẩm");
@@ -99,7 +88,7 @@ public class Home extends JFrame {
 			}
 		});
 		categoryBtn.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		categoryBtn.setBounds(107, 250, 292, 56);
+		categoryBtn.setBounds(107, 70, 292, 56);
 		mainPanel.add(categoryBtn);
 
 		JButton productBtn = new JButton("Quản lý sản phẩm");
@@ -110,7 +99,7 @@ public class Home extends JFrame {
 			}
 		});
 		productBtn.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		productBtn.setBounds(107, 316, 292, 56);
+		productBtn.setBounds(107, 136, 292, 56);
 		mainPanel.add(productBtn);
 
 		JButton billBtn = new JButton("Quản lý hóa đơn");
@@ -121,7 +110,7 @@ public class Home extends JFrame {
 			}
 		});
 		billBtn.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		billBtn.setBounds(107, 382, 292, 56);
+		billBtn.setBounds(107, 206, 292, 56);
 		mainPanel.add(billBtn);
 
 		JButton verifyUserBtn = new JButton("Xác minh tài khoản");
@@ -131,7 +120,7 @@ public class Home extends JFrame {
 			}
 		});
 		verifyUserBtn.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		verifyUserBtn.setBounds(422, 250, 292, 56);
+		verifyUserBtn.setBounds(107, 405, 292, 56);
 		mainPanel.add(verifyUserBtn);
 
 		JButton statBtn = new JButton("Thống kê");
@@ -175,7 +164,7 @@ public class Home extends JFrame {
 			}
 		});
 		statBtn.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		statBtn.setBounds(107, 515, 292, 56);
+		statBtn.setBounds(107, 339, 292, 56);
 		mainPanel.add(statBtn);
 
 		JButton changePassBtn = new JButton("Đổi mật khẩu");
@@ -186,12 +175,12 @@ public class Home extends JFrame {
 		});
 		
 		changePassBtn.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		changePassBtn.setBounds(422, 316, 292, 56);
+		changePassBtn.setBounds(107, 471, 292, 56);
 		mainPanel.add(changePassBtn);
 
 		JPanel productPanel = new JPanel();
 		productPanel.setBorder(new LineBorder(new Color(0, 0, 0), 2, true));
-		productPanel.setBounds(930, 496, 250, 101);
+		productPanel.setBounds(587, 339, 250, 101);
 		mainPanel.add(productPanel);
 		productPanel.setLayout(null);
 
@@ -215,7 +204,7 @@ public class Home extends JFrame {
 		JPanel billPanel = new JPanel();
 		billPanel.setBorder(new LineBorder(new Color(0, 0, 0), 2));
 		billPanel.setLayout(null);
-		billPanel.setBounds(930, 365, 250, 101);
+		billPanel.setBounds(587, 202, 250, 101);
 		mainPanel.add(billPanel);
 
 		JLabel billTitle = new JLabel("Hoá đơn đã tạo", SwingConstants.CENTER);
@@ -237,7 +226,7 @@ public class Home extends JFrame {
 
 		JPanel revenuePanel = new JPanel();
 		revenuePanel.setLayout(null);
-		revenuePanel.setBounds(792, 234, 388, 101);
+		revenuePanel.setBounds(449, 70, 388, 101);
 		mainPanel.add(revenuePanel);
 
 		ImageIcon revenueIcon = new ImageIcon(getClass().getResource(""));
@@ -281,18 +270,8 @@ public class Home extends JFrame {
 			}
 		});
 		addBillBtn.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		addBillBtn.setBounds(107, 448, 292, 56);
+		addBillBtn.setBounds(107, 272, 292, 56);
 		mainPanel.add(addBillBtn);
-		
-		JPanel billPanel_1 = new JPanel();
-		billPanel_1.setLayout(null);
-		billPanel_1.setBounds(181, 89, 829, 111);
-		mainPanel.add(billPanel_1);
-		
-		JLabel titleLableHome = new JLabel("Phần mềm quản lý tiệm tạp hoá Xanh", SwingConstants.CENTER);
-		titleLableHome.setFont(new Font("Tahoma", Font.PLAIN, 40));
-		titleLableHome.setBounds(10, 25, 804, 64);
-		billPanel_1.add(titleLableHome);
 
 		setLocationRelativeTo(null);
 		setVisible(true);

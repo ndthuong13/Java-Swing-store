@@ -6,17 +6,17 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry exported="true" kind="lib" path="lib/activation-1.1.jar">
+	<classpathentry kind="lib" path="C:/Users/van46/eclipse-workspace/QuanLyTiemTapHoa/lib/activation-1.1.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="lib/javax.mail.jar">
+	<classpathentry kind="lib" path="C:/Users/van46/eclipse-workspace/QuanLyTiemTapHoa/lib/javax.mail.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="lib/jfreechart-1.5.3.jar">
+	<classpathentry kind="lib" path="C:/Users/van46/eclipse-workspace/QuanLyTiemTapHoa/lib/jfreechart-1.5.3.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>

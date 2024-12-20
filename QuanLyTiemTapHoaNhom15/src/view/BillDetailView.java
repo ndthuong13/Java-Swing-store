@@ -24,14 +24,12 @@ import model.User;
 public class BillDetailView extends JFrame {
 
 	private static final long serialVersionUID = 1L;
-	private JPanel mainPanel;
+	private JPanel mainPanel;//Khởi tạo panel chính chứa toàn bộ giao diện
 	private JTable table;
 	private UserDAO userDAO;
 	private UserController userController;
 
-	/**
-	 * Create the frame.
-	 */
+
 	public BillDetailView(Bill bill) {
 		userDAO = new UserDAO();
 		userController = new UserController(userDAO);
